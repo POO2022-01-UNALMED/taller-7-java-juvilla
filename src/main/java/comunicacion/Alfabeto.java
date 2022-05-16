@@ -27,8 +27,8 @@ public class Alfabeto extends Pictograma{
 		String b=", ";
 		for (int i=0;i<this.letras.length;i++) {
 			String c=this.letras[i];
-			a.concat(c);
-			a.concat(b);
+			a=a.concat(c);
+			a=a.concat(b);
 		}
 		return a;
 	}
@@ -46,5 +46,11 @@ public class Alfabeto extends Pictograma{
 	}
 	public void setInterpretacion(String interpretacion) {
 		this.interpretacion=interpretacion;
+	}
+	public static void main(String Args[]) {
+		Alfabeto alfabeto = new Alfabeto("alfabeto griego, occidente",
+				new String [] { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"},
+				"Alfabeto latino");
+		System.out.println(alfabeto);
 	}
 }

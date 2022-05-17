@@ -22,7 +22,7 @@ public class Libro extends Escrito {
 	//otros metodos
 	
 	public int palabrasTotales(int palabrasPagina) {
-		return getPaginas()*2;
+		return getPaginas()*2*palabrasPagina;
 	}
 	
 	public String interpretacion() {
